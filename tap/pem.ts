@@ -97,6 +97,12 @@ export default (QUnit: QUnit, lib: typeof jose) => {
     [['EdDSA', 'Ed448'], KEYS.Ed448.pkcs8, env.isNode || env.isEdgeRuntime],
     [['EdDSA', 'Ed448'], KEYS.Ed448.spki, env.isNode || env.isEdgeRuntime],
     [['EdDSA', 'Ed448'], KEYS.Ed448.x509, env.isNode || env.isEdgeRuntime],
+    [['Ed25519', 'Ed25519'], KEYS.Ed25519.pkcs8, (env.isWebKit && env.isWebKitAbove17) || !env.isBrowser],
+    [['Ed25519', 'Ed25519'], KEYS.Ed25519.spki, (env.isWebKit && env.isWebKitAbove17) || !env.isBrowser],
+    [['Ed25519', 'Ed25519'], KEYS.Ed25519.x509, (env.isWebKit && env.isWebKitAbove17) || !env.isBrowser],
+    [['Ed448', 'Ed448'], KEYS.Ed448.pkcs8, env.isNode || env.isEdgeRuntime],
+    [['Ed448', 'Ed448'], KEYS.Ed448.spki, env.isNode || env.isEdgeRuntime],
+    [['Ed448', 'Ed448'], KEYS.Ed448.x509, env.isNode || env.isEdgeRuntime],
   ]
 
   function title(alg: string, crv: string | undefined, pem: string, works: boolean) {
