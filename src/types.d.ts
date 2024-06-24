@@ -6,8 +6,8 @@
  * {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array Uint8Array}
  * instances are also accepted as symmetric secret representation only.
  *
- * [Key Import Functions](../modules/key_import.md) can be used to import PEM, or JWK formatted
- * asymmetric keys and certificates to these runtime-specific representations.
+ * {@link key/import Key Import Functions} can be used to import PEM, or JWK formatted asymmetric
+ * keys and certificates to these runtime-specific representations.
  *
  * In Node.js the {@link https://nodejs.org/api/buffer.html#buffer Buffer} class is a subclass of
  * Uint8Array and so Buffer can be provided for symmetric secrets as well.
