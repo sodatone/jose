@@ -77,7 +77,7 @@
   "exports": {
     ".": {
       "types": "./dist/types/index.d.ts",
-      "bun": "./dist/browser/index.js",
+      "bun": "./dist/node/cjs/index.js",
       "deno": "./dist/browser/index.js",
       "browser": "./dist/browser/index.js",
       "worker": "./dist/browser/index.js",
